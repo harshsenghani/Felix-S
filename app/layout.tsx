@@ -5,6 +5,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import PageTransition from "@/components/ui/PageTransition";
 import ScrollProgress from "@/components/ui/ScrollProgress";
+import WhatsAppButton from "@/components/layout/WhatsAppButton";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -12,7 +13,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Felix Solutions | Industrial Inkjet, Coding & Marking Machines",
+  title: "Felix Solutions",
+  icons: {
+    icon: "/favicon-mark.svg",
+  },
   description:
     "Leading manufacturer and supplier of Continuous Inkjet Printers (CIJ), Thermal Inkjet Printers (TIJ), Laser Marking Machines, and Automated Labelling Systems in Mumbai and India.",
   keywords: [
@@ -41,6 +45,7 @@ export default function RootLayout({
           <PageTransition>{children}</PageTransition>
         </main>
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );

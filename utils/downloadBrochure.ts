@@ -1,8 +1,8 @@
 "use client";
 
 export function downloadProductBrochure() {
-  const fileUrl = "/downloads/felix-solutions-product-brochure.pdf";
-  const fileName = "felix-solutions-product-brochure.pdf";
+  const fileUrl = "/downloads/felix-solutions-complete-product-catalogue.pdf";
+  const fileName = "felix-solutions-complete-product-catalogue.pdf";
 
   // Create temporary link to trigger native browser download
   const link = document.createElement("a");

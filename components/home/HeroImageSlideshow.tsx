@@ -89,11 +89,9 @@ export default function HeroImageSlideshow({
               alt={slide.alt}
               fill
               priority={index === 0}
-              quality={90}
+              quality={100}
               sizes="100vw"
-              className={`object-cover object-center transform transition-transform duration-[3000ms] ease-out ${
-                isActive ? "scale-105" : "scale-100"
-              }`}
+              className="object-cover object-center"
             />
           </div>
         );
